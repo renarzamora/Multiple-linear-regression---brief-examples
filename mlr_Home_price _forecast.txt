@@ -1,0 +1,53 @@
+Let me explain some of the most relevant parts:
+
+Multiple Features:
+We're using multiple features for prediction, not just square footage. This is the key difference from simple linear regression.
+Data Preprocessing:
+In the preprocess_data method, we handle missing values and scale the features using StandardScaler. This is important for multiple linear regression to ensure all features are on the same scale.
+Feature Importance:
+In the evaluate_model method, we calculate and display feature importance using f_regression. This helps us understand which features are most influential in predicting house prices.
+Visualizations:
+We've added two visualization methods:
+
+visualize_residuals: Plots residuals against predicted values, which helps in checking the assumptions of linear regression.
+visualize_actual_vs_predicted: Compares actual prices with predicted prices, giving a visual representation of the model's performance.
+
+
+Prediction:
+The predict_price method now takes a dictionary of features as input, allowing for more flexible predictions.
+
+To use this code:
+
+Ensure you have all the required libraries installed.
+Replace 'house_data.csv' with the path to your actual dataset.
+Ensure your dataset has the columns specified in the features list.
+Run the script.
+
+This exercise demonstrates how to perform multiple linear regression, visualize the results, evaluate feature importance, and make predictions using an object-oriented approach. It covers data preprocessing, model training, evaluation, and visualization, providing a comprehensive example of the multiple linear regression process in the context of real estate price prediction.
+
+Permítanme explicarles algunas de las partes más relevantes:
+
+Características múltiples:
+Estamos utilizando múltiples características para la predicción, no sólo los metros cuadrados. Esta es la diferencia clave con respecto a la regresión lineal simple.
+Preprocesamiento de datos:
+En el método preprocess_data, manejamos los valores perdidos y escalamos las características usando StandardScaler. Esto es importante para la regresión lineal múltiple para asegurar que todas las características están en la misma escala.
+Importancia de las características:
+En el método evaluate_model, calculamos y mostramos la importancia de las características mediante f_regression. Esto nos ayuda a comprender qué características son las más influyentes en la predicción del precio de la vivienda.
+Visualizaciones:
+Hemos añadido dos métodos de visualización:
+
+visualize_residuals: Compara los residuos con los valores predichos, lo que ayuda a comprobar los supuestos de la regresión lineal.
+visualize_actual_vs_predicted: Compara los precios reales con los predichos, lo que ofrece una representación visual del rendimiento del modelo.
+
+
+Predicción:
+El método predict_price ahora toma un diccionario de características como entrada, permitiendo predicciones más flexibles.
+
+Para utilizar este código:
+
+Asegúrese de que tiene instaladas todas las bibliotecas necesarias.
+Sustituya "datos_casa.csv" por la ruta a su conjunto de datos real.
+Asegúrese de que su conjunto de datos tiene las columnas especificadas en la lista de características.
+Ejecute el script.
+
+Este ejercicio muestra cómo realizar una regresión lineal múltiple, visualizar los resultados, evaluar la importancia de las características y realizar predicciones utilizando un enfoque orientado a objetos. Cubre el preprocesamiento de datos, el entrenamiento del modelo
